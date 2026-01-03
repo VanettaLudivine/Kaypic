@@ -417,13 +417,10 @@ section{
 
 /* IMAGE */
 #about div img {
-    /*width: 650px;
-    height: 650px;
+    width: 450px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 50%;
-    */
-    width: 70%;
-        margin-bottom: 0px;
+    border-radius: 50%;        
         animation: infinite;
         border-radius: 60%;
         size: 50px;
