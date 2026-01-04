@@ -417,13 +417,14 @@ section{
 
 /* IMAGE */
 #about div img {
-    width: 70%;
-    height: 900px;
+    width: 450px;
+    height: 350px;
     object-fit: cover;
     border-radius: 50%;        
         animation: infinite;
         border-radius: 60%;
         size: 50px;
+        border-radius: 70%;
 }
 
 /* DIV CONTENU – collée à droite */
