@@ -417,8 +417,8 @@ section{
 
 /* IMAGE */
 #about div img {
-    width: 900px;
-    height: 900px;
+    width: 70%;
+    /*height: 900px;*/
     object-fit: cover;
     border-radius: 50%;        
         animation: infinite;
