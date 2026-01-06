@@ -208,19 +208,6 @@ section{
     }
 }
 
-/*
-@keyframes mots {
-    0%, 33% {
-        content: "programmer";
-    }
-    34%, 66% {
-        content: "Danser";
-    }
-    67%, 100% {
-        content: "Voyager";
-    }
-}
-*/
 @keyframes words  {
     0%, 16% {
         content: "programmer";
@@ -362,43 +349,11 @@ section{
     padding: 30px;
 }
 
-
-/*
 #about {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 10%;
-    gap: 40px;
-}
-
-
-#about div:first-of-type {
-    flex: 1;
-    display: flex;
-}
-
-#about div img {
-    width: 900px;
-    height: 900px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 0 30px rgba(109,67,0,0.4);
-    margin-left: 10px;
-}
-
-#about .contenu {
-    flex: 2;
-    font-size: 1.5rem;
-    line-height: 1.7;
-}
-*/
-#about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* pousse aux extrêmes */
-    padding: 60px 5%; /* moins de padding horizontal */
+    padding: 60px 5%; 
     width: 100%;
 }
 
@@ -408,14 +363,12 @@ section{
     margin-bottom: 40px;
 }
 
-/* DIV IMAGE – collée à gauche */
 #about div:first-of-type {
     flex: 1;
     display: flex;
-    justify-content: flex-start; /* pousse l’image à gauche */
+    justify-content: flex-start;
 }
 
-/* IMAGE */
 #about div img {
     width: 650px;
     height: 650px;
@@ -427,11 +380,10 @@ section{
         border-radius: 70%;
 }
 
-/* DIV CONTENU – collée à droite */
 #about .contenu {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* pousse le texte à droite */
+    justify-content: flex-end; 
     text-align: left;
     /*font-size: 1rem;*/
 
@@ -445,7 +397,6 @@ section{
     margin-bottom: 10px;
 }
 
-/* optionnel : enlever le dernier espace */
 .contenu > *:last-child {
     margin-bottom: 0;
 }
@@ -482,8 +433,6 @@ section{
     font-size: 1.5rem;
     color: black;
     background-color: beige;
-    
-
 }
 
 .galerie {
