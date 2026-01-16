@@ -1,79 +1,56 @@
-# Portfolio – Miranda Tchakounte Futat Francine
+# Application de Messagerie — Kaypic Style
 
-Bienvenue sur mon **portfolio personnel** 
-Ce site présente mon parcours, mes compétences et plusieurs projets réalisés dans le cadre de ma formation en **développement web et mobile**.
+Cette application permet aux utilisateurs de communiquer en temps réel à travers des groupes et conversations privées, avec un design inspiré de Microsoft Teams et une palette de couleurs personnalisée.
 
----
+## Fonctionnalités
 
-## À propos de moi
+### Gestion des groupes
+- Création d’un groupe de discussion  
+- Rejoindre / quitter un groupe  
+- Recherche de groupes et de personnes  
+- Fil d’actualité des groupes  
 
-Je suis étudiante en **Technique de l’informatique**, passionnée par les technologies de l’information et la création d’applications modernes.  
-Je me décris comme une développeuse **full stack**, avec une **préférence pour le front-end**, car j’accorde une grande importance aux détails, à l’ergonomie et à l’expérience utilisateur.
+### Messagerie en temps réel
+- Envoi et réception de messages instantanés via SignalR  
+- Affichage moderne type Teams  
+- Système de bulles  
+- Historique des messages (stockage BD)
 
-Je suis curieuse, j’apprends rapidement et j’aime relever de nouveaux défis techniques.
+### Partage de fichiers
+- Upload fichiers  
+- Upload dossiers complets  
+- Stockage BD + disque
 
----
+## Structure BD
 
-## Technologies utilisées
+### TMessagingPersona
+- mp_id (PK)
+- ts_id (FK)
+- mp_status
+- mp_category
+- mp_email
+- mp_lname
+- mp_fname
+- created_at
 
-### Langages
-- HTML5  
-- CSS3  
-- JavaScript  
-- TypeScript  
-- Python  
-- Java  
-- C#  
-- Kotlin  
+### TMessagingChat
+- mc_id (PK)
+- ts_id (FK)
+- mc_status
+- mc_title
+- created_by_mp_id
+- created_at
 
-### Frameworks & Outils
-- Angular  
-- Spring Boot  
-- ASP.NET Core MVC  
-- JavaFX  
-- Android Studio  
-- Git / GitHub / GitLab  
-- SQL Server  
-- Entity Framework Core  
-- SignalR  
+## Démonstration
 
----
+### Vidéo de démonstration (cmd + click)
 
-## Projets présentés
+<a href="https://VanettaLudivine.github.io/WebKaypic/kaypic.mp4" target="_blank">▶ Cliquez ici pour ouvrir la vidéo de démo</a>
 
-- **Simulateur de guichet automatique** (Java, JavaFX)  
-- **Gestion d’activités de groupes** (PHP, JavaScript, HTML, CSS)  
-- **Green Pulse** – plateforme web de mise en relation producteurs/acheteurs (Spring Boot, Thymeleaf)  
-- **Kaypic Communication** – application web de messagerie et collaboration en temps réel (ASP.NET Core, SignalR)  
-- **Tic-Tac-Toe avec bot intelligent** – application Android (Kotlin, MVVM, Strategy Pattern)
+*La vidéo montre la navigation complète : connexion → gestion clients → comptes → opérations.*
 
-Certains projets incluent des **captures d’écran** et des **vidéos de démonstration**.
+## Design Kaypic
+Couleurs : #5c0010, #9e3b42, #e4717a, #f5abb0, #ffe4ea, #FCF9F9, #F9F8F8, #000000.
 
----
-
-## Objectif
-
-Ce portfolio a pour but de :
-- Mettre en valeur mes compétences techniques
-- Présenter mes projets concrets
-- Appuyer mes candidatures pour un **stage en développement web et mobile (Hiver 2026)**
-
----
-
-## Liens utiles
-
--  **Portfolio en ligne** :  https://miranda0710.github.io/Mirandaportfolio/ 
--  **GitHub** : https://github.com/Miranda0710  
--  **LinkedIn** : https://www.linkedin.com/in/francine-miranda-tchakounte-futat-71491b380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-
----
-
-## Contact
-
-Email : futatmiranda@gmail.com
-Montréal, Canada
-
----
-
-Merci pour votre visite
-N’hésitez pas à me contacter pour toute question ou opportunité !
+## Technologies
+ASP.NET Core, SignalR, SQL Server, EF Core, HTML/CSS/JS, Twilio
